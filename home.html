@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap-css links v4.6-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- bootsrap-javascript links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!--svg icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Mobile responsive-->
+    <style>
+        @media (min-width: 375px) and (max-width: 812) {}
+    </style>
+
+
+    <title>plantery</title>
+</head>
+
+<body style="background-color: #ecf0f3;">
+    <div class="container" style="position:fixed;margin-top:40px">
+        <div class="col">
+            <div class="pos-f-t">
+                <div class="collapse" id="navbarToggleExternalContent">
+                  <div class="bg-dark p-2">
+                    <div class="list-group">
+                       
+                        <a href="my_plant_list.html" class="list-group-item list-group-item-action">My plants</a>
+                        <a href="home_plants_donate.html" class="list-group-item list-group-item-action">Get free plants</a>
+                        <a href="#" class="list-group-item list-group-item-action">My profile</a>
+                        <a href="#" class="list-group-item list-group-item-action disabled">Settings</a>
+                      </div>
+
+                  </div>
+                </div>
+                <nav class="navbar navbar-dark bg-dark">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </nav>
+              </div>
+
+        </div>
+        <!-- div with home icon,foto icon and chat icon-->
+        <div class="container" style="margin-top: 10px;">
+            <div class="row row-cols-2">
+              
+                <div class="col">
+                    <button class="btn btn-light rounded rounded-2">
+                        <img style="width: 75px;height: 75px;" src="images/profile.png" class="">
+                    </button>
+    
+                </div>
+                <div class="col">
+                    <button type="button">
+                        <i class="bi bi-chat-left-fill" style="color: blue;"></i>
+                    </button>
+    
+                </div>
+    
+            </div>
+        </div>
+     
+
+        <!-- Daily plant measures -->
+
+        <div class="rounded-lg container border border-white  shadow p-3 mb-4 " style="margin-top: 15px;">
+            <table class="justify-content-md-center">
+                <tr class="col-12">
+                    <td class="col border-right">
+                        <figure class="figure">
+                            <img style="width: 50px;height: 50px;" src="images/plant.png">
+                            <figcaption class="figure-caption" style="text-align: center;">
+                                rose
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td class="">
+                        <div style="margin-left: 100px;">Daily plant health</div>
+                        <table>
+                            <tr>
+                                <td class="col col-lg-2">
+                                    <figure class="figure">
+                                        <i class="bi bi-droplet-half"  style="color: green;"></i>
+                                        <figcaption class="figure-caption" style="font-style:oblique;">
+                                            humidity
+                                        </figcaption>
+                                    </figure>
+                                </td>
+                                <td class="col col-lg-2 border-left">
+                                    <figure class="figure">
+                                        <i class="bi bi-thermometer-sun" style="color: chocolate;"></i>
+                                        <figcaption class="figure-caption" style="font-style:oblique;">
+                                            Temp
+                                        </figcaption>
+                                    </figure>
+                                </td>
+                                <td class="col col-lg-2 border-left">
+                                    <figure class="figure">
+                                        <i class="bi bi-moisture" style="color: red;"></i>
+                                        <figcaption class="figure-caption" style="font-style:oblique;">
+                                            moisture
+                                        </figcaption>
+                                    </figure>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <!-- on going activities -->
+        <div class="rounded rounded-4 border border-white  shadow p-3 mb-5 " style="margin-top: 10px;">
+            <div class="shadow p-1 mb-2 col-7 border border-white rounded rounded-3" style="margin-bottom: 10px;">
+                <h6 class="text  font-weight-bold">On Going Activities</h6>
+            </div>
+            <div style="padding-left: 10px;">
+                <div class="row row-cols-4">
+                    <div class="col">
+                        <figure class="figure">
+                            <a href="activity.html"><img class="btn btn-light" style="width: 50px;height: 50px;" src="images/cofee.png"></a>
+                            <figcaption class="figure-caption text-center">
+                                <span class="badge badge-light rounded-circle">14</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col border-left">
+                        <figure class="figure">
+                            <img class="btn btn-light" style="width: 50px;height: 50px;" src="images/walk.png">
+                            <figcaption class="figure-caption text-center">
+                                <span class="badge badge-light rounded-circle">22</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col border-left">
+                        <figure class="figure">
+                            <img class="btn btn-light" style="width: 50px;height: 50px;" src="images/yoga.png">
+                            <figcaption class="figure-caption text-center">
+                                <span class="badge badge-light rounded-circle">10</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col border-left">
+                        <figure class="figure">
+                            <img class="btn btn-light" style="width: 50px;height: 50px;" src="images/meditation.png">
+                            <figcaption class="figure-caption text-center">
+                                <span class="badge badge-light rounded-circle">4</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--tips and badges-->
+        <div class="container border border-white shadow p-3 mb-5 rounded" style="margin-top: 20px;">
+            <div class="row">
+                <div class="col-2">
+                    <figure class="figure border border-white rounded-circle" style="height: 50px;width: 50px;">
+                        <img src="images/like.png" style="height: 40px;width: 40px;">
+                    </figure>
+                    <figcaption class="figure-caption">
+                        <a href="fun_fact.html">
+                            <button type="button" class="btn btn-outline-success btn-sm">more</button>
+                        </a>
+                        
+                    </figcaption>
+                </div>
+                <div class="col-7">
+                    <p>
+                    
+                        <h6 class="text text-center font-weight-bold">Did you know?</h6> 
+                    </h6>
+                    <p class="text text-center"><abbr>playing music around your plant is a good idea</abbr></p>
+                    </p>
+                    
+                </div>
+                <div class="col-3 border-left">
+                    <a href="points.html"> <figure class="figure btn btn-light">
+
+                        <i class="bi bi-trophy-fill"></i>
+
+                        <figcaption class="figure-caption">
+                            <label>1378</label>
+                        </figcaption>
+                    </figure></a>
+                   
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
