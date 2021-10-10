@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- bootsrap-javascript links -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+  crossorigin="anonymous"></script>
+
+<!--svg icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+<!-- Mobile responsive-->
+<style>
+  @media (min-width: 375px) and (max-width: 812) {}
+</style>
+</head>
+<body style="background-color: #ecf0f3;">
+    
+    <div class="container">
+        <!-- div with home icon,foto icon and chat icon-->
+        <div class="container" style="margin-top: 20px;">
+            <div class="row row-cols-3" style="margin-left:5px;">
+                <div class="col">
+                    <a href="index.html"><button type="button" class="btn btn-default btn-rounded btn-lg"
+                        style="background-color: #d1d9e6;border-radius: 50px;">
+                        <i class="bi-house" role="img" aria-label="Home"></i>
+                    </button></a>
+                </div>
+            </div>
+
+            <h4>Hello, <bold>Diana</bold>!</h4>
+            <p>Let share your plant with the other plant lover!</p> 
+            
+            <!--Number of plant div-->
+            <div class="media rounded rounded-2">
+                <div class="media-left">
+                    <img src="images/plant.png" class="media-object" style="width:50px">
+                </div>
+                <div class="media-body">
+                    <p>You have <a href="#">3</a> plant(s)</p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner justify-content-center">
+            <div class="item active justify-content-center">      
+                    <figure>
+                        <a href="plant_info.html"><img src="images/audery.jpeg" class="rounded" alt="Plant img" width="340" height="236"></a> 
+                        <figcaption style="text-align: center;">Audrey</figcaption>
+                        <div style="padding-left: 125px;">
+                            <button class="btn btn-secondary"style="text-align: center;background-color:#B3F0EF;margin-top: 30px;">Donate me</button> 
+                        </div>
+                    </figure>        
+            </div>
+
+            <div class="item">
+                <figure>
+                    <a href="plant_info.html"><img src="images/audery.jpeg" class="rounded" alt="Plant img" width="340" height="236"></a> 
+                    <figcaption style="text-align: center;">Audrey</figcaption>
+                    <div style="padding-left: 125px;">
+                        <button class="btn btn-light"style="text-align: center;background-color:#B3F0EF;margin-top: 30px;">Donate me</button> 
+                    </div>
+                </figure> 
+            </div>
+        
+            <div class="item">
+                <figure>
+                    <a href="plant_info.html"><img src="images/audery.jpeg" class="rounded" alt="Plant img" width="340" height="236"></a> 
+                    <figcaption style="text-align: center;">Audrey</figcaption>
+                    <div style="padding-left: 125px;">
+                        <button class="btn btn-light"style="text-align: center;background-color:#B3F0EF;margin-top: 30px;">Donate me</button> 
+                    </div>
+                </figure> 
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
+
+    <!--tips and badges-->
+    <div class="container border border-white rounded" style="margin-top: 15px;">
+        <div class="row">
+            <div class="col-2">
+                <figure class="figure border border-white rounded-circle" style="height: 50px;width: 50px;">
+                    <img src="images/like.png" style="height: 40px;width: 40px;">
+                </figure>
+            </div>
+            <div class="col-7">
+                <p>
+                <h6 class="text text-center font-weight-bold">Did you know?</h6> 
+                </h6>
+                <p class="text text-center"><abbr>playing music around your plant is a good idea</abbr></p>
+                </p>
+            </div>
+            <div class="col-3 border-left">
+                <figure class="figure btn btn-light">
+
+                    <i class="bi bi-trophy-fill"></i>
+
+                    <figcaption class="figure-caption">
+                        <label>1378</label>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
