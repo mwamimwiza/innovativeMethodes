@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Users score board</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+</head>
+
+<body style="background-color: #ecf0f3;">
+    <div class="container my-4 ">
+        <div id="score-board-head" class="row text-center ">
+            <h1>LEADER BOARD</h1>
+        </div>
+        <div class="row my-2 mx-2">
+                <div class="col-4 text-center  ">
+                    <img src="badge.png" alt="Winner badge" width="70" ,height="70">
+                   <div id="top" class="fs-4">
+                    <h3>#1</h3>
+                    <h2>Jean <span class="badge bg-secondary">350</span></h2>
+                   </div>
+
+                </div>
+                <div class="col-4 text-center">
+                    <img src="badge2.png" alt="second rank" width="70", height="70">
+                    <div id="top"class=" fs-4" >
+                        <h3>#2</h3>
+                        <h2>Marie <span class="badge bg-secondary">280</span></h2>
+                    </div>
+                    
+                </div>
+                <div class="col-4 text-center ">
+                    <img src="badge2.png" alt=" third rank" width="70", height="70">
+                        <div id="top" class="fs-4" >
+                            <h3>#3</h3>
+                            <h2>chris<span class="badge bg-secondary">260</span></h2>
+                        </div>
+                    
+                </div>
+        </div>
+        <div class="row text-center my-2 fs-3">
+            <p>Total Participants: 120 </p>
+            <P>Highest score: 500 </P>
+        </div>
+        <div class="row ">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">NAME</th>
+                    <th scope="col" style="text-align: center;">LEVEL</th>
+                    <th scope="col" style="text-align: center">RANKING</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Jimmy</td>
+                    <td>240</td>
+                    <td style="text-align: center">4</td>
+                  </tr>
+                  <tr>
+                    <td>Jacob</td>
+                    <td>200</td>
+                    <td style="text-align: center">5</td>
+                  </tr>
+                  <tr>
+                    <td>Mark</td>
+                    <td>170</td>
+                     <td style="text-align: center">6</td>
+                  </tr>
+                  <tr>
+                    <td>Lee</td>
+                    <td>150</td>
+                    <td style="text-align: center">7</td>
+                  </tr>
+                  <tr>
+                    <td>Malaika</td>
+                    <td>145</td>
+                    <td style="text-align: center">7</td>
+                  </tr>
+                  <tr>
+                    <td>Asante</td>
+                    <td>140</td>
+                    <td style="text-align: center">8</td>
+                  </tr>
+                  <tr>
+                    <td>Lee</td>
+                    <td>130</td>
+                    <td style="text-align: center">9</td>
+                  </tr>
+                  <tr>
+                    <td>Shiva</td>
+                    <td>125</td>
+                    <td style="text-align: center">10</td>
+                  </tr>
+                    
+                </tbody>
+              </table>
+        </div>
+        <div class="row justify-content-center ">
+           <button  onclick="goBack()" class=" btn px-1 py-1 "><i class="bi bi-house-fill"></i> <img src="house-fill.svg" alt="Home" height="30" width="30">Home</button>
+           <script>
+            function goBack() {
+              window.history.back();
+            }
+            </script>
+        </div>
+    </div>
+</body>
+</html> 
