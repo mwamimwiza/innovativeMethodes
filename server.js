@@ -80,8 +80,10 @@ let botAvatar = 'userAvatar';
 io.on('connection', socket => {
 
     socket.on('joinActivity', ({ userAvatar, username, activity }) => {
+        let usersNum={}; 
         let user = clickedActivity(socket.id, userAvatar, username, activity);
         socket.join(user.activity);
+
         //then display the activity
         io.to(user.activity)
             .emit('activityUsers', {
@@ -91,8 +93,14 @@ io.on('connection', socket => {
 
         socket.on('joinMe', ({ userAvatar, username, activity }) => {
             let user = userJoin(socket.id, userAvatar, username, activity);
-
             socket.join(user.activity);
+            if(usersNum[user.activity]==undefined){
+                usersNum[user.activity]=1;
+                console.log(usersNum)
+        }else{
+            usersNum[user.activity]++;
+            console.log(usersNum)
+        }
             //welcome the current user 
             socket.emit('message', formatMessage('/images/chatbot.png',`Welcome ${user.username}`, '', ''));
 
@@ -118,6 +126,8 @@ io.on('connection', socket => {
         //runs when user disconnects 
         socket.on('disconnect', () => {
                 let user = userLeave(socket.id);
+                usersNum[user.activity]--;
+                console.log(usersNum);
                 if (user) {
                     io.to(user.activity)
                         .emit('message', formatMessage('/images/chatbot.png', `${user.username} has left the chat`, ''));

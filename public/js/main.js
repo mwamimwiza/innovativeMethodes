@@ -76,20 +76,19 @@ function outputMessage(message) {
     let div = document.createElement('div')
 
     div.classList.add('message');
-    div.innerHTML = `<div>
+    div.innerHTML = `<div class="rounded rounded-4 border border-white  shadow p-3 mb-5">
 
 
-    <div class="row">
-    <p><img  src="${message.userAvatar}" name="userAvatar" style="height:50px;width:50px"> 
-    <h6 name="username">${message.username}</h6> <span style="margin-left:50px">${message.time}</span>
+    <div class="row ">
+    <p><img  src="${message.userAvatar}" name="userAvatar" style="height:50px;width:50px ; margin-left:10px"> 
+    <h6 name="username" class="card-subtitle mb-2 text-muted">${message.username}</h6> <h6 class="card-subtitle mb-2 text-muted" style="margin-left:50px">${message.time}</h6>
     </p>
 </div>
 <div class="row">
 ${message.text}
 </div>
 
-</div>
-<hr style="height:1px; width:100%; border-width:0; color:red; background-color:red">`;
+</div>`;
     document.querySelector('.chat-messages').appendChild(div)
 }
 
