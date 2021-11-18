@@ -46,12 +46,19 @@ app.get('/login', function (req, res) {
     let password = (req.query.password);
 
 
-    let sqlQuery = 'SELECT username,avatar from users WHERE username=? AND password=?';
+    let sqlQuery = 'SELECT UserId,UName,UAvatar,UPoints FROM Users WHERE UName=? AND UPwd=?';
     let values = [user, password];
     let postSQL = function (err, result) {
         if (err) throw err;
-        res.setHeader('Content-Type', 'text/html');
-        res.render('home.html', { username: result[0].username, avatar: result[0].avatar });
+        id=result[0].UserId;
+        queryPlant='SELECT PName,PAvatar,PTemp,Phumidity,Pmoisture FROM Plants WHERE UserId=?';
+        queryValues=(id);
+        db.query(queryPlant,queryValues,(err,results)=>{
+            if(err) throw err;
+            res.setHeader('Content-Type', 'text/html');
+            res.render('home.html', {userId:result[0].UserId,username: result[0].UName, avatar: result[0].UAvatar,points:result[0].UPoints,temp: results[0].PTemp,humidity: results[0].Phumidity,moisture: results[0].Pmoisture,plantName:results[0].PName,plantAvatar:results[0].PAvatar });
+        })
+        
     }
     db.query(sqlQuery, values, postSQL)
 

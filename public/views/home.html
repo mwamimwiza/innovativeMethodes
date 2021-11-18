@@ -58,7 +58,7 @@
         <!-- div with home icon,foto icon and chat icon-->
         <div class="container" style="margin-top: 10px;">
             <div class="row row-cols-2 justify-content-center">
-                
+                <span hidden name="userId"><%=userId%></span>
                 <!--username and avatar-->
                 <div class="col text-center">
                     <figure class="btn btn-light rounded rounded-2">
@@ -79,7 +79,7 @@
                             <i class="bi bi-trophy-fill"></i>
     
                             <figcaption class="figure-caption">
-                                <label>1378</label>
+                                <label id="points" name="points"><%=points%></label>
                             </figcaption>
                         </figure></a>
                     
@@ -96,9 +96,9 @@
                 <tr class="col-12">
                     <td class="col border-right">
                         <figure class="figure">
-                            <img style="width: 50px;height: 50px;" src="images/plant.png">
+                            <img style="width: 50px;height: 50px;" src="<%=plantAvatar%>">
                             <figcaption class="figure-caption" style="text-align: center;">
-                                rose
+                                <%=plantName%>
                             </figcaption>
                         </figure>
                     </td>
@@ -110,7 +110,8 @@
                                     <figure class="figure">
                                         <i class="bi bi-droplet-half"  style="color: green;"></i>
                                         <figcaption class="figure-caption" style="font-style:oblique;">
-                                            humidity
+                                            humidity:<br>
+                                            <span id="humidity" name="humidity"><%=humidity%></span>
                                         </figcaption>
                                     </figure>
                                 </td>
@@ -118,7 +119,8 @@
                                     <figure class="figure">
                                         <i class="bi bi-thermometer-sun" style="color: chocolate;"></i>
                                         <figcaption class="figure-caption" style="font-style:oblique;">
-                                            Temp
+                                            Temp:<br>
+                                            <span name="temp" id="temp"><%=temp%></span>
                                         </figcaption>
                                     </figure>
                                 </td>
@@ -126,7 +128,8 @@
                                     <figure class="figure">
                                         <i class="bi bi-moisture" style="color: red;"></i>
                                         <figcaption class="figure-caption" style="font-style:oblique;">
-                                            moisture
+                                            moisture:<br>
+                                            <span><%=moisture%></span>
                                         </figcaption>
                                     </figure>
                                 </td>
