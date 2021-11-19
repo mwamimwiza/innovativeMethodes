@@ -26,10 +26,15 @@ app.set('view engine', 'html');
 
 //create mysql connection 
 let db = mysql.createConnection({
-    host: 'localhost',
+    /*host: 'localhost',
     user: 'root',
     password: 'kagabo@!',
-    database: 'plantery'
+    database: 'plantery'*/
+    host: 'etu-web2.ut-capitole.fr',
+    //port: 3060,
+    user: '21812109',
+    password: 'T017F9',
+    database: 'db_21812109_2'
 });
 
 //connect to mysql db
