@@ -1,0 +1,400 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    color: #5E613A;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-y: hidden;
+}
+button{
+    cursor: pointer;
+}
+.button-active{
+    background-color: #C2CE7A;
+}
+.topnav{
+    direction: rtl;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background-color:  #B5BB8F;
+    height: 40px;
+    color: white;
+    width: 100%;
+}
+.topnav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 10px;
+}
+.topnav a.active{
+    background-color: #C2CE7A;
+}
+.topnav a:hover{
+    background-color: #D5DCBA;
+}
+.topnav span{
+    margin-right: auto;
+    margin-left: 2%;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.main{
+    height: 98%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileDiv{
+    width: 18%;
+    height: 92%;
+    margin-top: -2%;
+    margin-right: 0.6%;
+    background-color:#B5BB8F;
+    box-shadow: 0px 4px 10px #F4F4E4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contentDiv{
+    position: relative;
+    width: 78%;
+    height: 92%;
+    margin-top: -2%;
+    margin-left: 0.6%;
+    background-color: #F4F4E4;
+    border-radius: 10px;
+}
+.user{
+    width: 100%;
+    height: 55%;
+    margin-top: 15%;
+    background-color: #F4F4E4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-info{
+    width: 50%;
+    height: 40%;
+    margin-top: -20%;
+}
+.user-avatar{
+    height: 60%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: lightcoral;
+}
+.user-name{
+    height: 30%;
+    width: 100%;
+    font-size: 1.3vw;
+    font-weight: 500;
+    justify-content: center;
+}
+.user-score{
+    width: 92%;
+    height: 20%;
+}
+.score{
+    justify-content: center;
+    height: 100%;
+    font-size: 2.4vw;
+    font-weight: 800;
+    color: #C2CE7A;
+}
+.user-badges{
+    width: 92%;
+    height: 40%;
+    margin-top: 10%;
+
+}
+#score-badges{
+    height: 1.3vw;
+    width: 100%; 
+    flex-direction: row; 
+    justify-content: flex-start;
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+.profileDiv .button-list{
+    width: 100%;
+    height: 24%;
+    display: flex;
+    flex-direction: column;
+}
+.button-list .button{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 200;
+    cursor: pointer;
+}
+.button-list .button:hover{
+    background-color: #D5DCBA;
+}
+.button-list .button p{
+    margin-left: 5%;
+}
+.contentDiv .part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4E4;
+}
+.contentDiv .part.current-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.plants-gallery{
+    height: 35%;
+    width: 95%;
+    margin-top: 1%;
+    background-color: white;
+    border-radius: 10px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    overflow-x: auto;
+}
+.plants-gallery ul{
+    list-style: none;
+    height: 100%;
+    width: 12%;
+    padding: 0;
+    margin: 0;
+    margin-left: 2%;
+}
+
+.plant-avatar{
+    margin-top: 1%;
+    height: 88%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+
+}
+.plant-avatar .plant-image{
+    background-color: beige;
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px 6px 0 0;
+}
+.plant-avatar .plant-info{
+    background-color:#D5DCBA;
+    height: 25%;
+    width: 100%;
+    border-radius: 0 0 6px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.plant-avatar .plant-info p{
+    margin: 0;
+    padding: 0;
+    font-size: 0.7vw;
+}
+
+.plant-details{
+    height: 60%;
+    width: 95%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.plant-details .top{
+    height: 45%;
+    width: 100%;
+    display: flex;
+}
+.top .basic-info{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.basic-info-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.info-left{
+    height: 100%;
+    width: 50%;
+}
+.info-right{
+    height: 100%;
+    width: 50%;
+}
+.info-right .basic-information{
+    margin-bottom: 5%;
+    margin-top: 1%;
+}
+.basic-info-title{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 0.8vw;
+    margin-left: 5%;
+    margin-top: 1.5%;
+}
+.basic-information{
+    height: 1.6vw;
+    width: 85%;
+    background-color:white;
+    border-radius: 0.8vw;
+    margin-top: 0.5%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+.top .growth-evolution{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+#plant-photos{
+    height: 85%;
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plant-photo{
+    height: 100%;
+    width: 15%;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: lightgray;
+}
+.points{
+    height: 3%;
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+.point{
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #C2CE7A;
+
+}
+.plant-details .bottom{
+    height: 55%;
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+}
+.bottom .acctual-health{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+#acctual-health-content{
+    height: 100%;
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.indicator{
+    height: 100%;
+    width: 25%;
+    background-color: white;
+    margin-right: 10%;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.indicator-pic{
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px 6px 0 0;
+}
+.indicator p{
+    margin: 0;
+    margin-top: 0.5em;
+    font-size: 0.8vw;
+}
+.indicator-data{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1vw;
+    font-weight: bold;
+    
+}
+.indicator-assessment{
+    width: 100%;
+    height: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8vw;
+    font-weight: bold;
+    border-radius: 0 0 6px 6px;
+}
+.bottom .health-evolution{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+#plant-info-title{
+    font-size: 1vw;
+    font-weight: bold;
+}
